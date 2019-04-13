@@ -19,5 +19,6 @@ Route::group(['namespace' => 'Api', 'middleware' => 'api'], function () {
 
     Route::group(['middleware' => 'auth:api'], function () {
         Route::apiResource('place', 'PlaceController');
+        Route::apiResource('post', 'PostController');
     });
 });
